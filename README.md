@@ -20,26 +20,26 @@ The idea came from a conversation with Dr. Layson-Wolf and Ian Suttle. The solut
 ![screenshot](screenshot.png)
 
 ### 1. Configuration
-The application relies on a configuration directory `CareCompassApp/config/`.
+The application requires several environment variables to function.
 
-1.  **Firebase Service Account**:
-    *   Go to Firebase Console -> Project Settings -> Service Accounts.
-    *   Generate a new private key.
-    *   Save the file as `CareCompassApp/config/firebaseConfig.json`.
+**Option A: Using the Helper Script (Recommended)**
+1.  Copy the example script: `cp CareCompassApp/set_env_example.sh CareCompassApp/set_env.sh`
+2.  Edit `CareCompassApp/set_env.sh` and add your actual secrets (API keys, etc.).
+3.  Load the variables into your current shell:
+    ```bash
+    source CareCompassApp/set_env.sh
+    ```
 
-2.  **Secrets Configuration**:
-    *   Create a new file `CareCompassApp/config/secrets.yaml`. See 
-    *   Update the following fields:
-        ```yaml
-        gemini_api_key: "YOUR_GEMINI_API_KEY"
-        firebase_service_account_path: "config/firebaseConfig.json"
-        encryption_key: "YOUR_GENERATED_KEY" 
-        ```
-    *   *Note*: To generate a valid encryption key, run:
-        ```bash
-        python3 backend/generate_key.py
-        ```
-        Copy the output and paste it into `secrets.yaml`.
+**Option B: Manual Setup**
+Manually export the following variables:
+*   `GEMINI_API_KEY`
+*   `ENCRYPTION_KEY`
+*   `FIREBASE_SERVICE_ACCOUNT_JSON` (The actual JSON content string)
+
+*Note*: To generate a valid encryption key, run:
+```bash
+python3 CareCompassApp/backend/generate_key.py
+```
 
 3.  **Frontend Firebase Config**:
     *   Update `CareCompassApp/frontend/src/firebase.js` with your Firebase Web App configuration (API Key, Auth Domain, etc.) found in Project Settings.
