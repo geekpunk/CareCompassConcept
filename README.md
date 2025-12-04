@@ -19,6 +19,8 @@ The idea came from a conversation with Dr. Layson-Wolf and Ian Suttle. The solut
 
 This idea was first developed by creating a simple prototype using Gemini Canvas.  This was then taken into Antigravity and used in the initial prompts to generate the initial code.  The code was then refined and polished using the Antigravity IDE.
 
+[Gemini Prototype](GeminiPrototype.jsx)
+
 ## Key Features
 
 ![screenshot](screenshot.png)
