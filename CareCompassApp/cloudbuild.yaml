@@ -1,0 +1,5 @@
+steps:
+- name: 'gcr.io/cloud-builders/docker'
+  args: [ 'build', '-t', 'us-central1-docker.pkg.dev/carecompass-76a6a/carecompass-repo/carecompass-backend', '-f', 'backend/Dockerfile', '.' ]
+images:
+- 'us-central1-docker.pkg.dev/carecompass-76a6a/carecompass-repo/carecompass-backend'

@@ -1,0 +1,6 @@
+flask
+flask-cors
+firebase-admin
+cryptography
+google-generativeai
+pyyaml

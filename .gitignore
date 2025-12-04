@@ -1,0 +1,14 @@
+# Secrets
+CareCompassApp/config/secrets.yaml
+CareCompassApp/config/firebaseConfig.json
+.env
+CareCompassApp/set_env.sh
+
+# Python
+__pycache__/
+*.pyc
+
+# Node
+node_modules/
+dist/
+CareCompassApp/set_env.sh
