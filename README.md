@@ -23,7 +23,16 @@ This idea was first developed by creating a simple prototype using Gemini Canvas
 
 ![screenshot](screenshot.png)
 
-### 1. Configuration
+*   **AI-Powered Health Assistant**: Leverages Google Gemini 1.5 Pro to provide intelligent answers to health questions and explain medical concepts in simple terms.
+*   **Secure Patient Profiles**: Manage health records for multiple patients, including conditions, medications, and care teams.
+*   **Document Analysis**: Upload and analyze medical documents (PDFs, images). The AI extracts key information and provides summaries.
+*   **Encrypted Data Storage**: All sensitive patient data is encrypted at rest using Fernet symmetric encryption, ensuring privacy and security.
+*   **Real-time Chat**: Interactive chat interface with history, context awareness, and markdown support.
+*   **Responsive Design**: Modern, mobile-friendly interface built with React and Tailwind CSS.
+
+## Setup Instructions
+
+### 1. Backend Environment Variables
 The application requires several environment variables to function.
 
 **Option A: Using the Helper Script (Recommended)**
@@ -45,10 +54,10 @@ Manually export the following variables:
 python3 CareCompassApp/backend/generate_key.py
 ```
 
-3.  **Frontend Firebase Config**:
+### 2. Frontend Configuration
     *   Update `CareCompassApp/frontend/src/firebase.js` with your Firebase Web App configuration (API Key, Auth Domain, etc.) found in Project Settings.
 
-### 2. Backend Setup
+### 3. Backend Setup
 The backend is a Flask application that handles encryption, database interactions, and AI orchestration.
 
 ```bash
@@ -62,7 +71,7 @@ python3 app.py
 ```
 *The backend runs on `http://localhost:5000`.*
 
-### 3. Frontend Setup
+### 4. Frontend Setup
 The frontend is a modern React application built with Vite and Tailwind CSS.
 
 ```bash
@@ -77,8 +86,13 @@ npm run dev
 *The frontend runs on `http://localhost:5173`.*
 
 ---
-## currently set up to run with github actions
-see SETUP_GITHUB_ACTIONS.md for instructions
+## Deployment
+
+The application is configured for automated deployment using **GitHub Actions**.
+*   **Backend**: Deployed to **Google Cloud Run**.
+*   **Frontend**: Deployed to **Firebase Hosting**.
+
+For detailed setup instructions, including required secrets and permissions, please refer to [SETUP_GITHUB_ACTIONS.md](SETUP_GITHUB_ACTIONS.md).
 
 ## Troubleshooting
 
