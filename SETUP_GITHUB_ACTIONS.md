@@ -49,6 +49,17 @@ The application requires the following secrets to function correctly. Add these 
 2.  Use the same JSON content you downloaded for `GCP_SA_KEY` (or a separate service account if you prefer).
 3.  Add secret `FIREBASE_SERVICE_ACCOUNT_JSON` with the JSON content.
 
+### Frontend Secrets
+The frontend requires the following secrets to be set for the build process. These values can be found in your Firebase Console > Project Settings.
+
+*   `VITE_FIREBASE_API_KEY`
+*   `VITE_FIREBASE_AUTH_DOMAIN`
+*   `VITE_FIREBASE_PROJECT_ID`
+*   `VITE_FIREBASE_STORAGE_BUCKET`
+*   `VITE_FIREBASE_MESSAGING_SENDER_ID`
+*   `VITE_FIREBASE_APP_ID`
+*   `VITE_FIREBASE_MEASUREMENT_ID`
+
 ## Triggering the Deployment
 
 The deployment will automatically run whenever you push code to the `main` branch.

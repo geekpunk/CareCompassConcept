@@ -3,6 +3,7 @@ CareCompassApp/config/secrets.yaml
 CareCompassApp/config/firebaseConfig.json
 .env
 CareCompassApp/set_env.sh
+frontend/.env
 
 # Python
 __pycache__/
@@ -11,4 +12,4 @@ __pycache__/
 # Node
 node_modules/
 dist/
-CareCompassApp/set_env.sh
+frontend/.env

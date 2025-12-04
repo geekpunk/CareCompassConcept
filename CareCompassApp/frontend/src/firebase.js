@@ -3,13 +3,13 @@ import { getAuth, GoogleAuthProvider, signInWithPopup, signOut } from "firebase/
 
 // TODO: Replace with your Firebase Web App configuration
 const firebaseConfig = {
-    apiKey: "AIzaSyCJvOCoFixp246QGCd-KXVqqbqL6jbmFy0",
-    authDomain: "carecompass-76a6a.firebaseapp.com",
-    projectId: "carecompass-76a6a",
-    storageBucket: "carecompass-76a6a.firebasestorage.app",
-    messagingSenderId: "757177013584",
-    appId: "1:757177013584:web:392a892806db998b3f8855",
-    measurementId: "G-SR4MYME5CQ"
+    apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
+    authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
+    projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
+    storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
+    messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
+    appId: import.meta.env.VITE_FIREBASE_APP_ID,
+    measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID
 };
 
 const app = initializeApp(firebaseConfig);
