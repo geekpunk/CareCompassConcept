@@ -57,7 +57,11 @@ python3 CareCompassApp/backend/generate_key.py
 ```
 
 ### 2. Frontend Configuration
-Update [CareCompassApp/frontend/src/firebase.js](CareCompassApp/frontend/src/firebase.js) with your Firebase Web App configuration (API Key, Auth Domain, etc.) found in Project Settings in firebase console.
+The frontend uses environment variables for Firebase configuration.
+
+1.  Navigate to the frontend directory: `cd CareCompassApp/frontend`
+2.  Copy the example environment file: `cp .env.example .env`
+3.  Edit `.env` and update the values with your Firebase Web App configuration (API Key, Auth Domain, etc.) found in your Firebase Console Project Settings.
 
 ### 3. Backend Setup
 The backend is a Flask application that handles encryption, database interactions, and AI orchestration.
