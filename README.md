@@ -15,6 +15,10 @@ CareCompass is a secure, AI-powered personal health assistant designed to help u
 
 The idea came from a conversation with Dr. Layson-Wolf and Ian Suttle. The solution makes heavy use of Gemini 1.5 Pro and Antigravity in its development. Time spent in development is < 1 day from inception to current state over the Thanksgiving break.  So you know, take this with a grain of salt and more a concept piece than anything else.
 
+## development story
+
+This idea was first developed by creating a simple prototype using Gemini Canvas.  This was then taken into Antigravity and used in the initial prompts to generate the initial code.  The code was then refined and polished using the Antigravity IDE.
+
 ## Key Features
 
 ![screenshot](screenshot.png)
