@@ -65,8 +65,13 @@ npm run dev
 *The frontend runs on `http://localhost:5173`.*
 
 ---
-## currently set up to run with github actions
-see SETUP_GITHUB_ACTIONS.md for instructions
+## Deployment
+
+The application is configured for automated deployment using **GitHub Actions**.
+*   **Backend**: Deployed to **Google Cloud Run**.
+*   **Frontend**: Deployed to **Firebase Hosting**.
+
+For detailed setup instructions, including required secrets and permissions, please refer to [SETUP_GITHUB_ACTIONS.md](../SETUP_GITHUB_ACTIONS.md).
 
 ## Troubleshooting
 

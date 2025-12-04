@@ -68,3 +68,8 @@ frontend/
     npm run build
     ```
     Output will be in the `dist/` directory.
+
+## ☁️ Deployment
+
+The frontend is deployed to **Firebase Hosting** via GitHub Actions.
+Refer to the [Main README](../README.md#deployment) and [SETUP_GITHUB_ACTIONS.md](../../SETUP_GITHUB_ACTIONS.md) for details.

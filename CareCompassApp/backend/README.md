@@ -63,13 +63,29 @@ All endpoints require a valid Firebase ID Token in the `Authorization` header (`
     ```
 
 2.  **Configuration**:
-    Ensure you have the necessary secrets set in your environment or `config/secrets.yaml`:
+    The backend requires several environment variables to function.
+    
+    **Option A: Using the Helper Script (Recommended)**
+    1.  Copy the example script: `cp ../set_env_example.sh ../set_env.sh`
+    2.  Edit `../set_env.sh` and add your actual secrets (API keys, etc.).
+    3.  Load the variables into your current shell:
+        ```bash
+        source ../set_env.sh
+        ```
+
+    **Option B: Manual Setup**
+    Manually export the following variables:
     *   `GEMINI_API_KEY`
     *   `ENCRYPTION_KEY`
-    *   `FIREBASE_SERVICE_ACCOUNT_JSON` (or path)
+    *   `FIREBASE_SERVICE_ACCOUNT_JSON` (The actual JSON content string)
 
 3.  **Run Locally**:
     ```bash
     python app.py
     ```
     The server will start on port `8080` (or as configured).
+
+## ☁️ Deployment
+
+The backend is deployed to **Google Cloud Run** via GitHub Actions.
+Refer to the [Main README](../README.md#deployment) and [SETUP_GITHUB_ACTIONS.md](../../SETUP_GITHUB_ACTIONS.md) for details.
