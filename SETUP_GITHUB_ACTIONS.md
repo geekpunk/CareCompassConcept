@@ -27,21 +27,8 @@ This is the Service Account Key for Google Cloud.
 11. Value: Paste the JSON content.
 12. Click **Add secret**.
 
-## 2. FIREBASE_TOKEN
 
-This is required for the `firebase deploy` command.
-
-1.  Open your terminal.
-2.  Run: `firebase login:ci`
-3.  Log in with your Google account.
-4.  Copy the token printed in the terminal (it starts with `1//...`).
-5.  Go to your **GitHub Repository** > **Settings** > **Secrets and variables** > **Actions**.
-6.  Click **New repository secret**.
-7.  Name: `FIREBASE_TOKEN`
-8.  Value: Paste the token.
-9.  Click **Add secret**.
-
-## 3. Application Secrets
+## 2. Application Secrets
 The application requires the following secrets to function correctly. Add these to your GitHub Repository Secrets as well.
 
 ### GEMINI_API_KEY
